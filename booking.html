@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Book Your Add Today</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="listing.html">Advertisements</a></li>
+                <li><a href="booking.html">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="booking-form">
+        <h2>Complete the form to book an ad</h2>
+        <form id="bookingForm">
+           
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" placeholder=" Enter first name" required>
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" placeholder=" Enter last name" required>
+
+            <label for="tel">Contact:</label>
+            <input type="tel" id="tel" name="tel" placeholder=" Enter phone number" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder=" Enter your email" required>
+
+            <label for="title">Add Destination:</label>
+            <select id="title" name="title">
+                <option value="Balis">Balis, Indonesia</option>
+                <option value="Paris">Paris, France</option>
+                <option value="Maldives">Maldives</option>
+            </select><br><br>
+
+            <label for="date">Booking Date:</label>
+            <input type="datetime-local" id="date" name="date" required>
+
+            <label for="date">Travel Date:</label>
+            <input type="datetime-local" id="date" name="date" required>
+
+            <label for="period">Period to spend:</label>
+            <input type="datetime-local" id="period" name="period" required>
+
+            <label for="return">Return Date:</label>
+            <input type="datetime-local" id="return" name="return" required><br><br>
+
+            <label for="persons">Number of individuals:</label>
+            <input type="number" id="persons" name="persons" step="1" min="0" max="10" required><br><br>
+
+            <p>We value our clients feedback and remarks. We'd love to hear from you! Share your thoughts or questions in the comments below</p>
+            <label for="feedback">Comment Section</label><br>
+            <textarea id="feedback" name="feedback" rows="10" cols="50"></textarea><br><br>
+
+            <input style="background-color:aquamarine;width:70px;;height:30px" type="submit" value="Submit">
+            <input style="background-color:aquamarine;width:70px;height:30px" type="reset" value="refresh">
+        </form>
+    </section>
+   
+    <footer>
+        <p>&copy; 2024 Advertisement & Booking. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
